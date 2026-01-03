@@ -30,6 +30,11 @@ Route::get('/pr9',function(){
     return view('tasklist',compact('task'));
 });
 
+Route::view('/pr14','dashboard');
+Route::view('/register','register');
+Route::view('/login','login');
+
+
 Route::get('/pro16',function(){
     $tasks = ['study','play','cook'];
     return view('task',compact('tasks'));
@@ -52,7 +57,3 @@ Route::get('/pro18',function(){
     ];
     return view('emptytask',compact('tasks'));
 });
-
-Route::view('/pr19','dashboard');
-Route::view('/register','register');
-Route::view('/login','login');
