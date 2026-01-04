@@ -30,6 +30,18 @@ Route::get('/pr9',function(){
     return view('tasklist',compact('task'));
 });
 
+Route::get('/pr11',function(){
+    return view('profile') -> with('name','john doe');
+});
+
+Route::get('/pr12/{name}',function($name){
+    $data = 'Lcca';
+    return view('login12') -> with(compact('name','data'));
+});
+
+Route::view('/pr13','home');
+
+
 Route::view('/pr14','dashboard');
 Route::view('/register','register');
 Route::view('/login','login');
